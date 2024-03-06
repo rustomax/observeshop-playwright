@@ -53,6 +53,8 @@ test('can purchase an item', async ({ page }) => {
 
 Create script for crontab `/opt/playwright/run.sh`
 
+Put the script in `/opt/playwright/run-observeshop.1.spec.ts.sh`
+
 ```sh
 #!/bin/bash
 
@@ -62,18 +64,18 @@ export FORCE_COLOR='false'
 exec_dir="/opt/playwright/tests"
 cd ${exec_dir}
 
-npx playwright test --workers 3
+npx playwright test observeshop.1.spec.ts --workers 3
 ```
 
 Set correct permissions for the `/opt/playwright/run.sh` script
 ```sh
-chmod 755 /opt/playwright/run.sh
+chmod 755 /opt/playwright/run-observeshop.1.spec.ts.sh
 ```
 
 Add the following line to your crontab with `crontab -e` to run the synthetic test every 5 min (or however often you desire):
 
 ```crontab
-*/5 * * * * /opt/playwright/run.sh
+*/5 * * * * /opt/playwright/run-observeshop.1.spec.ts.sh
 ```
 
 ## Cleanup
