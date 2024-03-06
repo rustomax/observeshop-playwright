@@ -51,7 +51,9 @@ test('can purchase an item', async ({ page }) => {
 });
 ```
 
-## Create scripts to run from crontab
+## Create crontab script
+
+Playwright doesn't have it's own scheduling mechanism, so we need to trigger playwright scripts externally. Here is a script example that can be called from crontab at regular intervals to generate some transactions in the app.
 
 Put the script in `/opt/playwright/run-observeshop.1.spec.ts.sh`
 
