@@ -21,7 +21,7 @@ The crontab:
 
 ## Caveats
 
-> ❗ Following instructions are for `Ubuntu 22.04.3 LTS (Jammy Jellyfish)` and `Node v18.16.0`. Instructions may vary for different OS and Node versions.
+> ❗ Instructions in this document are for `Ubuntu 22.04.3 LTS (Jammy Jellyfish)` and `Node v18.16.0`. Instructions may vary for different OS and Node versions.
 
 > ❗ I am using my own user `max` here. For more production setup, create a dedicated playwright user. (Perhaps consider `/usr/sbin/nologin` for the shell?)
 
