@@ -51,8 +51,6 @@ test('can purchase an item', async ({ page }) => {
 
 # Create scripts to run from crontab
 
-Create script for crontab `/opt/playwright/run.sh`
-
 Put the script in `/opt/playwright/run-observeshop.1.spec.ts.sh`
 
 ```sh
@@ -78,7 +76,7 @@ Add the following line to your crontab with `crontab -e` to run the synthetic te
 */5 * * * * /opt/playwright/run-observeshop.1.spec.ts.sh
 ```
 
-## Cleanup
+## Cleanup (optional)
 
 Remove the example script
 
