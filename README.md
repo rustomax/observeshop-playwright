@@ -1,6 +1,25 @@
-# observeshop-playwright
+# Observeshop Playwright and Other Scripts
 
 For up-to-date instructions on creating, deploying and managing playwright scripts, see [Playwright documentation](https://playwright.dev/docs/intro)
+
+## Crontab and playwright scripts
+
+Full list of crontab, playwright and Github scripts can be found [here](./scripts/).
+
+The crontab:
+
+```crontab
+*/10 * * * * /opt/playwright/run-observeshop.1.spec.ts.sh
+10 * * * * /opt/playwright/fail_adservice.sh
+10 * * * * /opt/otel-demo/commit_adservice_change.sh
+50 * * * * /opt/playwright/fix_adservice.sh
+50 * * * * /opt/otel-demo/commit_adservice_fix.sh
+15 * * * * /opt/playwright/fail_cartservice.sh
+15 * * * * /opt/playwright/fail_productcatalog.sh
+*/15 * * * * /opt/playwright/run-observeshop.set_locust.ts.sh
+```
+
+## Caveats
 
 > ❗ Following instructions are for `Ubuntu 22.04.3 LTS (Jammy Jellyfish)` and `Node v18.16.0`. Instructions may vary for different OS and Node versions.
 
@@ -92,4 +111,4 @@ rm /opt/playwright/tests/example.spec.ts
 
 Validate that tests are running by searching for the email you specified in the test in the OTEL spans in Observe:
 
-![Playwright List](./playwright-list.png)
+![Playwright List](./screenshots/playwright-list.png)
