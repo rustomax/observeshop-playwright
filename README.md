@@ -88,4 +88,4 @@ rm /opt/playwright/tests/example.spec.ts
 
 Validate that tests are running by searching for the email you specified in the test in the OTEL spans in Observe:
 
-![Playwright List](./screenshots/playwright-list.png)
+![Playwright List](./playwright-list.png)
