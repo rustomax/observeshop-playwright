@@ -65,7 +65,7 @@ cd ${exec_dir}
 npx playwright test observeshop.1.spec.ts --workers 3
 ```
 
-Set correct permissions for the `/opt/playwright/run.sh` script
+Set correct permissions for the crontab script script
 ```sh
 chmod 755 /opt/playwright/run-observeshop.1.spec.ts.sh
 ```
