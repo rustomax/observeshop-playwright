@@ -3,6 +3,7 @@
 For up-to-date instructions on creating, deploying and managing playwright scripts, see [Playwright documentation](https://playwright.dev/docs/intro)
 
 > ❗ Following instructions are for `Ubuntu 22.04.3 LTS (Jammy Jellyfish)` and `Node v18.16.0`. Instructions may vary for different OS and Node versions.
+
 > ❗ I am using my own user `max` here. For more production setup, create a dedicated playwright user. (Perhaps consider `/usr/sbin/nologin` for the shell?)
 
 ## Install node, playwright and required libraries
