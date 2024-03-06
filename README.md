@@ -29,6 +29,8 @@ npm init playwright@latest
 
 ## Create playwright script
 
+This script follows a checkout flow to buy a specific product (National Park Foundation Explorascope) with a particular user email (max@observeinc.com). This is a great script to check that your Playwright setup is working and produces meaninful stuff in Observe.
+
 Create file `/opt/playwright/tests/observeshop.1.spec.ts` with the following contents:
 
 ```ts
