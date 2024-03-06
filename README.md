@@ -49,7 +49,7 @@ test('can purchase an item', async ({ page }) => {
 });
 ```
 
-# Create scripts to run from crontab
+## Create scripts to run from crontab
 
 Put the script in `/opt/playwright/run-observeshop.1.spec.ts.sh`
 
